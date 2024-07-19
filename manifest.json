@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Omnibox Keyword Expander",
+  "description": "Expand keywords to full URLs in the Chrome Omnibox",
+  "version": "1.0",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "omnibox": {
+    "keyword": "x"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
